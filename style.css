@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+.cards {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.cards.flip{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+    background-color: grey;
+    backface-visibility: hidden;
+}
+.front{
+    transform: rotateY(180deg);
+}
+img{
+    width: 90px;
+    height: 90px;
+}
