@@ -6,7 +6,7 @@ let screenLock = false;
 let firstCard, secondCard;
 
 function flip() {
-    if(screenLock){
+    if (screenLock) {
         return;
     }
 
@@ -43,9 +43,9 @@ function flip() {
     }
 }
 
-(function arrangeImg(){
+(function arrangeImg() {
     selectCard.forEach(card => {
-        let num = Math.floor(Math.random()*30);
+        let num = Math.floor(Math.random() * 30);
         card.style.order = num;
     })
 })();
